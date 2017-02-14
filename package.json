@@ -1,0 +1,10 @@
+{
+  "name": "winston-daily-rotate-file-scalajs",
+  "version": "1.4.4",
+  "private": true,
+  "dependencies": {
+    "source-map": "^0.5.6",
+    "winston": "^2.3.1",
+    "winston-daily-rotate-file": "^1.4.4"
+  }
+}
