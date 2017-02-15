@@ -2,22 +2,22 @@ WinstonDailyRotateFile API for Scala.js
 ================================
 [winston-daily-rotate-file](https://www.npmjs.com/package/winston-daily-rotate-file) - A transport for winston which logs to a rotating file each day..
 
-#### Description
+### Description
 
 A transport for [winston](https://github.com/scalajs-io/winston) which logs to a rotating file each day.
 
-#### Build Dependencies
+### Build Dependencies
 
 * [ScalaJs.io v0.3.x](https://github.com/scalajs-io/scalajs.io)
 * [SBT v0.13.13](http://www.scala-sbt.org/download.html)
 
-#### Build/publish the SDK locally
+### Build/publish the SDK locally
 
 ```bash
  $ sbt clean publish-local
 ```
 
-#### Running the tests
+### Running the tests
 
 Before running the tests the first time, you must ensure the npm packages are installed:
 
@@ -31,7 +31,7 @@ Then you can run the tests:
 $ sbt test
 ```
 
-#### Examples
+### Examples
 
 ```scala
 import io.scalajs.nodejs.process
@@ -56,9 +56,9 @@ val logger = new winston.Logger(new ConfigurationOptions(
 logger.info("Hello World!")
 ```
 
-#### Artifacts and Resolvers
+### Artifacts and Resolvers
 
-To add the `Winston-daily-rotate-file` binding to your project, add the following to your build.sbt:  
+To add the `WinstonDailyRotateFile` binding to your project, add the following to your build.sbt:  
 
 ```sbt
 libraryDependencies += "io.scalajs.npm" %%% "winston-daily-rotate-file" % "1.4.4"
