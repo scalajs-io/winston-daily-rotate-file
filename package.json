@@ -1,6 +1,6 @@
 {
-  "name": "winston-daily-rotate-file-scalajs",
-  "version": "1.4.4",
+  "name": "winston-daily-rotate-file-sjs",
+  "version": "1.4.4-2",
   "private": true,
   "dependencies": {
     "source-map": "^0.5.6",
