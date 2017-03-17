@@ -1,6 +1,6 @@
 {
   "name": "winston-daily-rotate-file-sjs",
-  "version": "1.4.4-2",
+  "version": "1.4.4-3",
   "private": true,
   "dependencies": {
     "source-map": "^0.5.6",
