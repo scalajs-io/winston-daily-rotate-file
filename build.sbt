@@ -5,8 +5,8 @@ import sbt._
 
 import scala.language.postfixOps
 
-val apiVersion = "1.4.4-4"
-val scalaJsIOVersion = "0.3.0.8"
+val scalaJsIOVersion = "0.4.0-pre1"
+val apiVersion = scalaJsIOVersion
 val scalaJsVersion = "2.12.1"
 
 homepage := Some(url("https://github.com/scalajs.io/winston-daily-rotate-file"))
@@ -27,7 +27,7 @@ lazy val root = (project in file(".")).
 	    "org.scala-lang" % "scala-reflect" % scalaJsVersion,
 	    "org.scalatest" %%% "scalatest" % "3.0.1" % "test",
 	    "io.scalajs" %%% "nodejs" % scalaJsIOVersion,
-        "io.scalajs.npm" %%% "winston" % "2.3.1-4"
+        "io.scalajs.npm" %%% "winston" % scalaJsIOVersion
   ))
 
 /////////////////////////////////////////////////////////////////////////////////
