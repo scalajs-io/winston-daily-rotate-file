@@ -1,6 +1,7 @@
 package io.scalajs.npm.winston
 package transports
 
+import io.scalajs.nodejs.fs.Fs
 import io.scalajs.nodejs.process
 import io.scalajs.npm.winston
 import io.scalajs.npm.winston.ConfigurationOptions
@@ -13,8 +14,10 @@ import scala.scalajs.js
   * @author lawrence.daniels@gmail.com
   */
 class WinstonDailyRotateFileTest extends FunSpec {
+  private val resourcesPath = "./src/test/resources"
 
   describe("WinstonDailyRotateFile") {
+    if(!Fs.existsSync(resourcesPath)) Fs.mkdirSync(resourcesPath)
 
     it("supports log rotation") {
       WinstonDailyRotateFile

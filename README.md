@@ -9,7 +9,7 @@ A transport for [winston](https://github.com/scalajs-io/winston) which logs to a
 ### Build Dependencies
 
 
-* [SBT v0.13.16](http://www.scala-sbt.org/download.html)
+* [SBT v1.2.x](http://www.scala-sbt.org/download.html)
 
 ### Build/publish the SDK locally
 
@@ -61,7 +61,7 @@ logger.info("Hello World!")
 To add the `WinstonDailyRotateFile` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "winston-daily-rotate-file" % "0.4.2"
+libraryDependencies += "io.scalajs.npm" %%% "winston-daily-rotate-file" % "0.5.0"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:
